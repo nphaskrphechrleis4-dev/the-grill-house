@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE GRILL HOUSE | Premium Steakhouse</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <a href="#home" class="logo">THE <span>GRILL</span> HOUSE</a>
+    <nav>
+        <a href="#home">หน้าแรก</a>
+        <a href="#menu">เมนูอาหาร</a>
+        <a href="#about">เกี่ยวกับเรา</a>
+        <a href="#contact">ติดต่อ</a>
+    </nav>
+    <a href="#menu" class="cart-button">
+        🛒 ตะกร้า <span id="cart-count">0</span>
+    </a>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="gold-text">WELCOME TO THE GRILL HOUSE</p>
+        <h1>THE ART OF<br><span>PERFECT STEAK</span></h1>
+        <p>สัมผัสความอร่อยของสเต็กคุณภาพ<br>
+        ปรุงสดใหม่ ใส่ใจทุกจาน เพื่อคุณ</p>
+        <a href="#menu" class="main-button">เลือกเมนูอาหาร →</a>
+    </div>
+</section>
+
+<section class="features">
+    <div>🥩 วัตถุดิบคุณภาพ</div>
+    <div>🔥 ย่างสดใหม่ทุกจาน</div>
+    <div>⭐ บริการด้วยใจ</div>
+</section>
+
+<section class="menu-section" id="menu">
+    <div class="section-heading">
+        <p class="gold-text">OUR MENU</p>
+        <h2>เมนูแนะนำของเรา</h2>
+        <p>เลือกความอร่อยในแบบที่คุณชอบ</p>
+    </div>
+
+    <div class="search-box">
+        <input type="text" id="search" placeholder="ค้นหาเมนูอาหาร...">
+    </div>
+
+    <div class="categories">
+        <button class="category active" data-category="all">ทั้งหมด</button>
+        <button class="category" data-category="beef">เนื้อวัว</button>
+        <button class="category" data-category="pork">เนื้อหมู</button>
+        <button class="category" data-category="chicken">ไก่</button>
+        <button class="category" data-category="seafood">อาหารทะเล</button>
+        <button class="category" data-category="side">ของทานเล่น</button>
+        <button class="category" data-category="dessert">ของหวาน</button>
+    </div>
+
+    <div class="menu-grid" id="menu-grid"></div>
+
+    <div class="cart-area">
+        <h2>🛒 ตะกร้าของคุณ</h2>
+        <div id="cart-items">ยังไม่มีรายการอาหาร</div>
+        <div class="cart-total">
+            ยอดรวม <strong id="cart-total">฿0</strong>
+        </div>
+        <button class="checkout-button" id="checkout">ยืนยันรายการสั่งอาหาร</button>
+        <p class="small-note">* เว็บไซต์ตัวอย่างสำหรับการศึกษา ยังไม่รองรับการชำระเงินจริง</p>
+    </div>
+</section>
+
+<section class="about-section" id="about">
+    <div class="about-image"></div>
+    <div class="about-content">
+        <p class="gold-text">ABOUT US</p>
+        <h2>ความอร่อยที่เริ่มต้นจากคุณภาพ</h2>
+        <p>
+            THE GRILL HOUSE คือร้านสเต็กที่ให้ความสำคัญกับ
+            วัตถุดิบและการปรุงอาหารทุกขั้นตอน
+            เราคัดสรรวัตถุดิบคุณภาพ ปรุงสดใหม่
+            เพื่อมอบประสบการณ์การรับประทานอาหารที่ดีที่สุด
+        </p>
+        <a href="#menu" class="main-button">ค้นพบเมนูของเรา</a>
+    </div>
+</section>
+
+<section class="contact-section" id="contact">
+    <p class="gold-text">CONTACT US</p>
+    <h2>แวะมาหาความอร่อยกับเรา</h2>
+    <div class="contact-grid">
+        <div>📍<h3>สถานที่</h3><p>THE GRILL HOUSE</p></div>
+        <div>🕒<h3>เวลาเปิดบริการ</h3><p>ทุกวัน 11:00 - 21:00 น.</p></div>
+        <div>📞<h3>โทรศัพท์</h3><p>080-000-0000</p></div>
+    </div>
+</section>
+
+<footer>
+    <h2>THE <span>GRILL</span> HOUSE</h2>
+    <p>PREMIUM STEAKHOUSE</p>
+    <p>© 2026 THE GRILL HOUSE. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
